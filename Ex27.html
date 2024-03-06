@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+  </head>
+  <body>
+    <table id="tbl" border="1">
+      <tr>
+        <td>לחיצה על הכפתור המתאים</td>
+        <td>
+          <button id="button1" type="button" onclick="f1()">hide</button>
+          <button id="button2" type="button" onclick="f2()">show</button>
+        </td>
+        <td><img id="img" src="images/1.jpg" height="100" width="100" /></td>
+      </tr>
+      <tr>
+        <td>לחיצה על הכפתור תגדיל ותקטין את התמונה</td>
+        <td>
+          <button id="button3" type="button" onclick="f3()">-</button>
+          <button id="button4" type="button" onclick="f4()">+</button>
+        </td>
+        <td><img id="img2" src="images/2.jpg" height="100" width="100" /></td>
+      </tr>
+      <tr>
+        <td>לחיצה על כפתור תחליף בין התמונות</td>
+        <td>
+          <button id="button5" type="button" onclick="f5()">החלף</button>
+        </td>
+        <td>
+          <img id="img3" src="images/3.jpg" height="100" width="100" />
+          <img id="img4" src="images/4.jpg" height="100" width="100" />
+        </td>
+      </tr>
+      <tr>
+        <td>הוספת תמונה דינאמית אל התא שלחיצה עליה תציג את ערכי המאפיינים שלה</td>
+        <td></td>
+        <td onclick="f6(this)" id="td37" style="border: 3px dotted red"></td>
+      </tr>
+      <tr>
+        <td>בחירת אפשרות מהתיבה תגרום לשינוי צבע רקע הדף</td>
+        <td></td>
+        <td>
+          <select onchange="f8(this)">
+            <option value="red">אדום</option>
+            <option value="green">ירוק</option>
+            <option value="blue">כחול</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <input type="text" disabled id="disabledInput" />
+        </td>
+        <td>
+          <input type="text" onkeyup="f10(this)" />
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <a
+            href="www.google.com"
+            style="border: 1px solid red"
+            alternateColor="blue"
+            onmouseover="ChangeColor(this)"
+            >Google</a
+          >
+        </td>
+        <td>
+          <img
+            src="images/1.jpg"
+            style="border: 1px solid blue"
+            alternateColor="red"
+            onmouseover="ChangeColor(this)"
+          />
+        </td>
+      </tr>
+    </table>
+    <table>
+      <tr id="ex8-tr"></tr>
+    </table>
+    <script src="Ex27.js"></script>
+  </body>
+</html>
